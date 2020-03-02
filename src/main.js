@@ -16,7 +16,7 @@ const validate = async (event) => {
 
 const updateWithAdd = async (event) => {
   document.querySelector('#result').innerHTML = '';
-  if (document.querySelector('#firstNumber').checkValidity() && document.querySelector('#secondNumber').checkValidity()) {
+  if (document.querySelector('#firstNumber').checkValidity(){
     const regex = /[^a-zA-Z_]/g
     const s = document.querySelector('#guest').value.replace(regex, '')
     const i = parseInt(document.querySelector('#firstNumber').value)
