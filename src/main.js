@@ -1,6 +1,6 @@
 const student = 2;
 
-const add = (student) => { return student + 1 }
+const add = (student) => { return student + 1}
 
 const validate = async (event) => {
   console.log(`triggered validate on ${event.target.id}`)
