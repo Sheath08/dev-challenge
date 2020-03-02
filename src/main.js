@@ -1,4 +1,6 @@
-const add = (x, y) => { return x + 2*y }
+const student = 2;
+
+const add = (student) => { return student + 1 }
 
 const validate = async (event) => {
   console.log(`triggered validate on ${event.target.id}`)
@@ -18,8 +20,7 @@ const updateWithAdd = async (event) => {
     const regex = /[^a-zA-Z_]/g
     const s = document.querySelector('#guest').value.replace(regex, '')
     const i = parseInt(document.querySelector('#firstNumber').value)
-    const j = parseInt(document.querySelector('#secondNumber').value)
-    const ans = `${s}, your sum is ${add(i, j)}.`
+    const ans = `${s}, Students per course is: ${add(i)}.`
     document.querySelector('#result').innerHTML = ans
   }
 }
